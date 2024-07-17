@@ -1,0 +1,317 @@
+
+<html>
+<head>
+
+<script>
+function myFunction(x) {
+	x.classList.toggle("change");
+}
+
+function toggleInactive(x) {
+	x.classList.toggle("inactive");
+}
+
+</script>
+
+<title>Der Hering ist Fisch des Jahres 2021</title>
+
+<meta name="herofisch" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<style>
+
+.inactive a {
+	display: none;
+}
+
+.accordion {
+  background-color: Teal;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 35px;
+  border: 35px;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+ 
+ 
+ .container {
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+* {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#wuerfel {
+  width: 100px;
+  height: 100px;
+  background: MediumSpringGreen;
+  position: relative;
+  animation: myfirst 4s 5;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0%   {background: MediumSpringGreen; left: 0px; top: 0px;}
+  50%  {background: MediumSpringGreen; left: 800px; top: 0px;}
+  100%  {background: MediumSpringGreen; left: 800px; top: -600px;}
+}
+ 
+
+</style>
+</head>
+<body>
+
+
+
+<button class="accordion" onclick="toggleInactive(this)">
+	<div class="container"
+	onclick="myFunction(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+		<a  href="aal-gericht.html">Aal</a>
+		<a  href="seelachs-gericht.html">Seelachs</a>
+		<a  href="dorade-gericht.html">Dorade</a>
+		<a  href="forelle-website.html">Forelle</a>
+		<a  href="hering-website.html">Hering</a>
+	</div>
+</button>
+
+
+<img src="Speise-fisch-hero-bild.jpg" width="65%" height="auto" class="center">
+
+
+<img src="Fischbild.jpg" alt="https://paz.de/artikel/der-hering-ist-fisch-des-jahres-2021-a4153.html" width="800" height="600">
+<div id="wuerfel" ></div>
+
+
+
+<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+	<a class="navbar-brand" href="#">Navbar</a>
+	<ul class="nav nav-pills">
+	  <li class="nav-item">
+		<a class="nav-link" href="#scrollspyHeading1">First</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="#scrollspyHeading2">Second</a>
+	  </li>
+	  <li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+		<ul class="dropdown-menu">
+		  <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+		  <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+		  <li><hr class="dropdown-divider"></li>
+		  <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+		</ul>
+	  </li>
+	</ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+	<h4 id="scrollspyHeading1">Der Fisch des Jahres 2021 ist der atlantische Hering, Clupea harengus, auch „Silber des Meeres“ genannt. 
+		Er wurde vom Deutschen Angelfischverband, dem Bundesamt für Naturschutz und in Abstimmung mit dem Verband deutscher Sporttaucher dazu gekürt. 
+		Der Hering ist der wichtigste Nutzfisch der Meere, obwohl sein Bestand derzeit gefährdet ist. Er ist ein Schwarmfisch, lebt gesellig und weidet das Meer nach Nahrung ab. 
+		Die Fischer kennen ihre Wanderwege und folgen ihnen.</h4>
+	<p>...</p>
+	<h4 id="scrollspyHeading2">In meiner Heimatstadt Stettin habe ich oft diesen Spruch gehört: 
+		„Hunderttausend Heringsfässer lagern auf der Lastadie und Stettin versendet sie.“ Hierher kamen Heringe von den Hochseefischern, die in der Nordsee bis in den Atlantik und nach Island fischten. 
+		Der Fang wurde dann gleich auf dem Hochseefischdampfer eingesalzen.</h4>
+	<p>...</p>
+	<h4 id="scrollspyHeading3">Drittens</h4>
+	<p>...</p>
+	<h4 id="scrollspyHeading4">Viertens</h4>
+	<p>...</p>
+	<h4 id="scrollspyHeading5">Fünftens</h4>
+	<p>...</p>
+  </div>
+
+
+
+<h1>Der Hering ist Fisch des Jahres 2021</h1>
+
+
+<b>„Hunderttausend Heringsfässer lagern auf der Lastadie und Stettin versendet sie“ – Erinnerungen an den Fischfang im alten Pommern</b>
+
+
+<p></p>
+ 
+ <p></p>
+ 
+ <p>Der Stettiner Arzt Ludwig Schleich, Entdecker der örtlichen Betäubung, behauptet in seinem Buch 
+ „Besonnte Vergangenheit“, dass seine Heimatstadt das Gepräge einer echten Fischer- und Kommerzstadt besaß. 
+ Die Lagerschuppen für Heringe waren kilometerlang und bildeten, wie der angeführte Spruch schon aussagte, den größten Stapelplatz für Fisch in Deutschland. 
+ Zwischen Baum- und Hansabrücke war das Fischbollwerk. Hier wurden die Heringe verkauft. Heringe waren preiswert. 
+ Den Maklern wurde nach altem Brauch eine Heringsprobe vom Fass gereicht.<p/>
+
+
+
+<h2>Beiszeiten-Tabelle</h2>
+
+
+<b>Welcher Fisch beisst zur welchen Jahresphase und in welchen Monaten am Besten?</b>
+
+
+<p>In den vergangenen zehn Jahren Angelpraxis habe ich im Rhein und in zahlreichen anderen Gewässern die unterschiedlichsten Fischarten gefangen. 
+Bestimmte Fischarten habe ich dabei besonders gut und häufig im Frühjahr und Sommer gefangen, 
+andere Fischarten widerum wurden erst im Herbst und Winter richtig aktiv und somit fängig.</p>
+
+<p>Als Angelanfänger habe ich in der Vergangenheit viele Fehler gemacht und daraus gelernt - ich habe zum Beispiel gelernt, 
+dass es wenig Sinn macht im Januar auf Aal zu angeln, da Aale erst aktiv werden sobald sich das Wasser auf über 10 Grad erwärmt. 
+Ich habe u.a. auch gelernt, dass man Barben am Rhein im Spätsommer/Herbst wesentlich besser fangen kann als im Frühjahr ...</p>
+
+<p>Über die Jahre habe ich mir so bestimmte Beißzeiten von vielen Fischarten gemerkt und eingeprägt - 
+diese nützlichen Infos zu Beißzeiten möchte ich nun hier im nachfolgenden Beißindex an meine Leser weitergeben !</p>
+
+<p><b>Tipp:</b><a  href="http://www.rhein-angeln.de/angeln_jahreszeiten_standplaetze.htm"> hier </a> können Sie nachlesen, 
+wo sich die Fische in den unterschiedlichen Jahreszeiten aufhalten und wie sie sich erfolgreich beangeln lassen.</p>
+
+<p>In nachfolgender Tabelle finden Sie eine Aufstellung der meisten bei uns beheimateten Süßwasserfische und die besten Zeiten/Jahresphasen, 
+in denen die Fischarten besonders aktiv sind und gut gefangen werden können.</p>
+
+<p><b>Wichtig:</b> Diese Tabelle basiert auf persönlichen Erfahrungen und gilt nur zur Orientierung - 
+Achten Sie unbedingt auch auf die gesetzlichen <a  href="http://www.rhein-angeln.de/fischarten_schonzeiten_mindestmasse.htm">Schonzeiten und Mindestmaße </a> aller Fische !</p>
+
+<p><b>Zur Info:</b>  Die Fische in der Tabelle sind alphabetisch geordnet.</p>
+
+<p><b>Bedeutung der Symbole:</b></p>
+
+<p>√     = fängig aber eher zufällig</p>
+
+<p>√√   = aktiv und gut fängig</p>
+
+<p>√√√ = sehr aktiv und sehr gut fängig</p>
+
+
+<table>
+<tr>
+	<th></th>
+	<th>Juni</th>
+	<th>Juli</th>
+	<th>Aug.</th>
+</tr>
+
+
+<tr>
+	<td><a  href="http://www.rhein-angeln.de/barsch.htm"> Barsch</a></td>
+	<td><b> √√√ </b></td>
+	<td><b> √√√ </b></td>
+	<td><b> √√√ </b></td>
+</tr>
+
+<tr>
+	<td><a  href="http://www.rhein-angeln.de/brassen.htm"> Brassen</a></td>
+	<td><b> √√ </b></td>
+	<td><b> √√ </b></td>
+	<td><b> √√√ </b></td>
+</tr>
+
+<tr>
+	<td><a  href="http://www.rhein-angeln.de/doebel.htm"> Döbel</a></td>
+	<td><b> √√ </b></td>
+	<td><b> √√√ </b></td>
+	<td><b> √√√ </b></td>
+</tr>
+
+<tr>
+	<td><a  href="http://www.rhein-angeln.de/giebel.htm">Giebel</a></td>
+	<td><b> √√√ </b></td>
+	<td><b> √√√ </b></td>
+	<td><b> √√√ </b></td>
+</tr>
+
+
+<tr>
+	<td><a  href="http://www.rhein-angeln.de/graskarpfen_weisser_amur.htm">Graskarpfen</a></td>
+	<td><b> √√ </b></td>
+	<td><b> √√√ </b></td>
+	<td><b> √√√ </b></td>
+</tr>
+
+<tr>
+	<td><a  href="http://www.rhein-angeln.de/gruendling.htm">Gründling</a></td>
+	<td><b> √√ </b></td>
+	<td><b> √√√ </b></td>
+	<td><b> √√√ </b></td>
+</tr>
+</table>
+
+<p class="d-inline-flex gap-1">
+	<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+		Die beliebtesten Speisefische
+	</a>
+  </p>
+  <div class="collapse" id="collapseExample">
+	<div class="card card-body">
+		<ul>
+			<li><a  href="aal-gericht.html">Aal</a></li>
+			<li><a  href="seelachs-gericht.html">Seelachs</a></li>
+			<li><a  href="dorade-gericht.html">Dorade</a></li>
+			<li><a  href="forelle-website.html">Forelle</a></li>
+			<li><a  href="hering-website.html">Hering</a></li>
+		  </ul> 
+	</div>
+  </div>
+
+
+<style>
+
+.card,  .card-body {
+	background-color: MediumSeaGreen;
+}
+
+body {
+  background-color: Teal;
+}
+
+
+h1 { 
+	color: LightSalmon;
+}
+
+
+td {
+	color: MediumSpringGreen;
+}
+
+
+</style>
+</body>
+<html>
+
