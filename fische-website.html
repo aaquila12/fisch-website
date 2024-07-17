@@ -123,56 +123,20 @@ img {
 <div id="wuerfel" ></div>
 
 
-
-<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-	<a class="navbar-brand" href="#">Navbar</a>
-	<ul class="nav nav-pills">
-	  <li class="nav-item">
-		<a class="nav-link" href="#scrollspyHeading1">First</a>
-	  </li>
-	  <li class="nav-item">
-		<a class="nav-link" href="#scrollspyHeading2">Second</a>
-	  </li>
-	  <li class="nav-item dropdown">
-		<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-		<ul class="dropdown-menu">
-		  <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-		  <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-		  <li><hr class="dropdown-divider"></li>
-		  <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-		</ul>
-	  </li>
-	</ul>
-  </nav>
-  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-	<h4 id="scrollspyHeading1">Der Fisch des Jahres 2021 ist der atlantische Hering, Clupea harengus, auch „Silber des Meeres“ genannt. 
-		Er wurde vom Deutschen Angelfischverband, dem Bundesamt für Naturschutz und in Abstimmung mit dem Verband deutscher Sporttaucher dazu gekürt. 
-		Der Hering ist der wichtigste Nutzfisch der Meere, obwohl sein Bestand derzeit gefährdet ist. Er ist ein Schwarmfisch, lebt gesellig und weidet das Meer nach Nahrung ab. 
-		Die Fischer kennen ihre Wanderwege und folgen ihnen.</h4>
-	<p>...</p>
-	<h4 id="scrollspyHeading2">In meiner Heimatstadt Stettin habe ich oft diesen Spruch gehört: 
-		„Hunderttausend Heringsfässer lagern auf der Lastadie und Stettin versendet sie.“ Hierher kamen Heringe von den Hochseefischern, die in der Nordsee bis in den Atlantik und nach Island fischten. 
-		Der Fang wurde dann gleich auf dem Hochseefischdampfer eingesalzen.</h4>
-	<p>...</p>
-	<h4 id="scrollspyHeading3">Drittens</h4>
-	<p>...</p>
-	<h4 id="scrollspyHeading4">Viertens</h4>
-	<p>...</p>
-	<h4 id="scrollspyHeading5">Fünftens</h4>
-	<p>...</p>
-  </div>
-
-
-
 <h1>Der Hering ist Fisch des Jahres 2021</h1>
 
 
 <b>„Hunderttausend Heringsfässer lagern auf der Lastadie und Stettin versendet sie“ – Erinnerungen an den Fischfang im alten Pommern</b>
 
 
-<p></p>
+<p>Der Fisch des Jahres 2021 ist der atlantische Hering, Clupea harengus, auch „Silber des Meeres“ genannt. 
+ Er wurde vom Deutschen Angelfischverband, dem Bundesamt für Naturschutz und in Abstimmung mit dem Verband deutscher Sporttaucher dazu gekürt. 
+ Der Hering ist der wichtigste Nutzfisch der Meere, obwohl sein Bestand derzeit gefährdet ist. Er ist ein Schwarmfisch, lebt gesellig und weidet das Meer nach Nahrung ab. 
+ Die Fischer kennen ihre Wanderwege und folgen ihnen.</p>
  
- <p></p>
+ <p>In meiner Heimatstadt Stettin habe ich oft diesen Spruch gehört: 
+ „Hunderttausend Heringsfässer lagern auf der Lastadie und Stettin versendet sie.“ Hierher kamen Heringe von den Hochseefischern, die in der Nordsee bis in den Atlantik und nach Island fischten. 
+ Der Fang wurde dann gleich auf dem Hochseefischdampfer eingesalzen.</p>
  
  <p>Der Stettiner Arzt Ludwig Schleich, Entdecker der örtlichen Betäubung, behauptet in seinem Buch 
  „Besonnte Vergangenheit“, dass seine Heimatstadt das Gepräge einer echten Fischer- und Kommerzstadt besaß. 
@@ -182,31 +146,95 @@ img {
 
 
 
+
+
+ <div class="row">
+	<div class="col-4">
+	  <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+		<nav class="nav nav-pills flex-column">
+		  <a class="nav-link" href="#item-1">Item 1</a>
+		  <nav class="nav nav-pills flex-column">
+			<a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+			<a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+		  </nav>
+		  <a class="nav-link" href="#item-2">Item 2</a>
+		  <a class="nav-link" href="#item-3">Item 3</a>
+		  <nav class="nav nav-pills flex-column">
+			<a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+			<a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+		  </nav>
+		</nav>
+	  </nav>
+	</div>
+  
+	<div class="col-8">
+	  <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+		<div id="item-1">
+		  <h4>Welcher Fisch beisst zur welchen Jahresphase und in welchen Monaten am Besten?</h4>
+		  <p>In den vergangenen zehn Jahren Angelpraxis habe ich im Rhein und in zahlreichen anderen Gewässern die unterschiedlichsten Fischarten gefangen. 
+			Bestimmte Fischarten habe ich dabei besonders gut und häufig im Frühjahr und Sommer gefangen, 
+			andere Fischarten widerum wurden erst im Herbst und Winter richtig aktiv und somit fängig.</p>
+			<p>Als Angelanfänger habe ich in der Vergangenheit viele Fehler gemacht und daraus gelernt - ich habe zum Beispiel gelernt, 
+				dass es wenig Sinn macht im Januar auf Aal zu angeln, da Aale erst aktiv werden sobald sich das Wasser auf über 10 Grad erwärmt. 
+				Ich habe u.a. auch gelernt, dass man Barben am Rhein im Spätsommer/Herbst wesentlich besser fangen kann als im Frühjahr ...</p>
+				<p>Über die Jahre habe ich mir so bestimmte Beißzeiten von vielen Fischarten gemerkt und eingeprägt - 
+					diese nützlichen Infos zu Beißzeiten möchte ich nun hier im nachfolgenden Beißindex an meine Leser weitergeben !</p>
+		</div>
+		<div id="item-1-1">
+		  <h5><b>Tipp:</b></h5>
+		  <p><a  href="http://www.rhein-angeln.de/angeln_jahreszeiten_standplaetze.htm"> hier </a> können Sie nachlesen, 
+			wo sich die Fische in den unterschiedlichen Jahreszeiten aufhalten und wie sie sich erfolgreich beangeln lassen.</p>
+		</div>
+		<div id="item-1-2">
+		  <h5>Item 1-2</h5>
+		  <p>In nachfolgender Tabelle finden Sie eine Aufstellung der meisten bei uns beheimateten Süßwasserfische und die besten Zeiten/Jahresphasen, 
+			in denen die Fischarten besonders aktiv sind und gut gefangen werden können.</p>
+		</div>
+		<div id="item-2">
+		  <h4>Item 2</h4>
+		  <p><b>Wichtig:</b> Diese Tabelle basiert auf persönlichen Erfahrungen und gilt nur zur Orientierung - 
+			Achten Sie unbedingt auch auf die gesetzlichen <a  href="http://www.rhein-angeln.de/fischarten_schonzeiten_mindestmasse.htm">Schonzeiten und Mindestmaße </a> aller Fische !</p>
+		</div>
+		<div id="item-3">
+		  <h4>Item 3</h4>
+		  <p></p>
+		</div>
+		<div id="item-3-1">
+		  <h5>Item 3-1</h5>
+		  <p></p>
+		</div>
+		<div id="item-3-2">
+		  <h5>Item 3-2</h5>
+		  <p>...</p>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+
+
+
+
+  
+
 <h2>Beiszeiten-Tabelle</h2>
 
 
-<b>Welcher Fisch beisst zur welchen Jahresphase und in welchen Monaten am Besten?</b>
 
 
-<p>In den vergangenen zehn Jahren Angelpraxis habe ich im Rhein und in zahlreichen anderen Gewässern die unterschiedlichsten Fischarten gefangen. 
-Bestimmte Fischarten habe ich dabei besonders gut und häufig im Frühjahr und Sommer gefangen, 
-andere Fischarten widerum wurden erst im Herbst und Winter richtig aktiv und somit fängig.</p>
 
-<p>Als Angelanfänger habe ich in der Vergangenheit viele Fehler gemacht und daraus gelernt - ich habe zum Beispiel gelernt, 
-dass es wenig Sinn macht im Januar auf Aal zu angeln, da Aale erst aktiv werden sobald sich das Wasser auf über 10 Grad erwärmt. 
-Ich habe u.a. auch gelernt, dass man Barben am Rhein im Spätsommer/Herbst wesentlich besser fangen kann als im Frühjahr ...</p>
+<p></p>
 
-<p>Über die Jahre habe ich mir so bestimmte Beißzeiten von vielen Fischarten gemerkt und eingeprägt - 
-diese nützlichen Infos zu Beißzeiten möchte ich nun hier im nachfolgenden Beißindex an meine Leser weitergeben !</p>
+<p></p>
 
-<p><b>Tipp:</b><a  href="http://www.rhein-angeln.de/angeln_jahreszeiten_standplaetze.htm"> hier </a> können Sie nachlesen, 
-wo sich die Fische in den unterschiedlichen Jahreszeiten aufhalten und wie sie sich erfolgreich beangeln lassen.</p>
+<p></p>
 
-<p>In nachfolgender Tabelle finden Sie eine Aufstellung der meisten bei uns beheimateten Süßwasserfische und die besten Zeiten/Jahresphasen, 
-in denen die Fischarten besonders aktiv sind und gut gefangen werden können.</p>
+<p></p>
 
-<p><b>Wichtig:</b> Diese Tabelle basiert auf persönlichen Erfahrungen und gilt nur zur Orientierung - 
-Achten Sie unbedingt auch auf die gesetzlichen <a  href="http://www.rhein-angeln.de/fischarten_schonzeiten_mindestmasse.htm">Schonzeiten und Mindestmaße </a> aller Fische !</p>
+<p></p>
+
+<p></p>
 
 <p><b>Zur Info:</b>  Die Fische in der Tabelle sind alphabetisch geordnet.</p>
 
